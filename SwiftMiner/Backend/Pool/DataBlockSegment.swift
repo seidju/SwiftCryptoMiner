@@ -17,47 +17,41 @@ enum DataBlockSegmentType {
     case UnsignedInt64
 }
 
-struct DataBlockSegment {
+class DataBlockSegment {
     var type: DataBlockSegmentType
-    var dataObject: DataObjectProtocol!
+    //var dataObject: DataObjectProtocol!
     var data: NSData!
     var signedInt32: Int32!
     var unsignedInt32: UInt32!
     var signedInt64: Int64!
     var unsignedInt64: UInt64!
+//    
+//    init(dataObject: DataObjectProtocol) {
+//        self.type = DataBlockSegmentType.DataObject
+//        self.dataObject = dataObject
+//    }
     
-    init(dataObject: DataObjectProtocol)
-    {
-        self.type = DataBlockSegmentType.DataObject
-        self.dataObject = dataObject
-    }
-    
-    init(data: NSData)
-    {
+    init(data: NSData) {
         self.type = DataBlockSegmentType.Data
         self.data = data
     }
     
-    init(signedInt32: Int32)
-    {
+    init(signedInt32: Int32) {
         self.type = DataBlockSegmentType.SignedInt32
         self.signedInt32 = signedInt32
     }
     
-    init(unsignedInt32: UInt32)
-    {
+    init(unsignedInt32: UInt32) {
         self.type = DataBlockSegmentType.UnsignedInt32
         self.unsignedInt32 = unsignedInt32
     }
     
-    init(signedInt64: Int64)
-    {
+    init(signedInt64: Int64) {
         self.type = DataBlockSegmentType.SignedInt64
         self.signedInt64 = signedInt64
     }
     
-    init(unsignedInt64: UInt64)
-    {
+    init(unsignedInt64: UInt64) {
         self.type = DataBlockSegmentType.UnsignedInt64
         self.unsignedInt64 = unsignedInt64
     }

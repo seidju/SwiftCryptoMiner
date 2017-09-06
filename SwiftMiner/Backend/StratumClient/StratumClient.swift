@@ -15,8 +15,8 @@ class StratumClient: NSObject {
     let host: String
     let port: Int
     
-    let login = "login"
-    let password = "password"
+    let login = "seidju"
+    let password = "Ksrd7fjnpe!"
     
     var newJob: Observable<JobParameters> {
         return self.newJobSubject.asObservable()
@@ -114,8 +114,7 @@ extension StratumClient: GCDAsyncSocketDelegate {
 
     
     func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
-        print("***********************DISCONNECTED FROM SOCKET WITH ERROR \(err)*************************\n"
+        print("***********************DISCONNECTED FROM SOCKET WITH ERROR \(err)*************************\n")
     }
-    
    
 }

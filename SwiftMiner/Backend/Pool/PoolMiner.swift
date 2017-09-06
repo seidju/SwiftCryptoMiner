@@ -95,7 +95,7 @@ class PoolMiner {
 //There's a seriuos memory leaking, memory also need to swotch from NSData to Data
     func startMining(_ job: JobParameters) {
         autoreleasepool {
-        if let subscribeResultUnwrapped = self.subscribeResult {
+            guard let subscribeResultUnwrapped = self.subscribeResult  else { return }
             // setup
             self.currentlyMining = true
             var lastTime = Date()
@@ -123,7 +123,7 @@ class PoolMiner {
                 for h in job.merkleBranch {
                     let merkleRootDataBlock = DataBlock(rawData: merkleRoot)
                     merkleRootDataBlock.addSegment(data: NSData(hexString: h))
-                    let data = merkleRootDataBlock.rawData
+                    let data = merkleRootDataBlock.getRawData()
                     merkleRoot = Cryptography.doubleSha256HashData((data as NSData).bytes, length: UInt32(data.length))! as NSData
                 }
                 
@@ -134,11 +134,11 @@ class PoolMiner {
                 blockHeaderDataBlock.addSegment(data: merkleRoot.reverse() as NSData)
                 blockHeaderDataBlock.addSegment(data: NSData(hexString: job.ntime)! as NSData)
                 blockHeaderDataBlock.addSegment(data: NSData(hexString: job.nbits)! as NSData)
-                blockHeaderDataBlock.addSegment(data: NSData(hexString: "00000000"))
+                blockHeaderDataBlock.addSegment(data: NSData(hexString: extraNonce2String))
                 blockHeaderDataBlock.addSegment(data: NSData(hexString: "000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000"))
                 
                 // get the raw data, hash it
-                let blockHeaderRawData = blockHeaderDataBlock.rawData
+                let blockHeaderRawData = blockHeaderDataBlock.getRawData()
                 let hash = Cryptography.doubleSha256HashData((blockHeaderRawData as NSData).bytes, length: UInt32(blockHeaderRawData.length))! as NSData
                 
                 #if DEBUG
@@ -176,8 +176,6 @@ class PoolMiner {
             extraNonce2 += 1
             }
         }
-        
         print("not solved...")
-        }
     }
 }
