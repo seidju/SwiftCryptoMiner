@@ -7,3 +7,5 @@ Algorithm's support:
 - [x] SHA-256d
 - [ ] ethash
 - [ ] CryptoNight
+[Stratum protocol](https://en.bitcoin.it/wiki/Stratum_mining_protocol#mining.submit)
+[Stratum example](https://slushpool.com/help/manual/stratum-protocol)
