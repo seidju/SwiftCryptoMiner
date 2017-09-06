@@ -89,8 +89,6 @@ class PoolMiner {
         return data
     }
 
-    
-    
 //FIXME: 
 //There's a seriuos memory leaking, memory also need to swotch from NSData to Data
     func startMining(_ job: JobParameters) {

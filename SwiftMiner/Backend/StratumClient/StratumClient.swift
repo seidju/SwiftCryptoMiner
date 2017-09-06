@@ -15,8 +15,8 @@ class StratumClient: NSObject {
     let host: String
     let port: Int
     
-    let login = "seidju"
-    let password = "Ksrd7fjnpe!"
+    let login = "login"
+    let password = "password"
     
     var newJob: Observable<JobParameters> {
         return self.newJobSubject.asObservable()
