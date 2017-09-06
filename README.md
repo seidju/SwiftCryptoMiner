@@ -9,7 +9,5 @@ Algorithm's support:
 - [ ] CryptoNight
 
 Links:
-
-[Stratum protocol](https://en.bitcoin.it/wiki/Stratum_mining_protocol#mining.submit)
-
-[Stratum example](https://slushpool.com/help/manual/stratum-protocol)
+- [Stratum protocol](https://en.bitcoin.it/wiki/Stratum_mining_protocol#mining.submit)
+- [Stratum example](https://slushpool.com/help/manual/stratum-protocol)
