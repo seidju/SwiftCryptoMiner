@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E26A047D07EFC5266FAE529 /* Pods_SwiftMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B81445AD8714F460E1539 /* Pods_SwiftMiner.framework */; };
+		8BEA194F1F5EA271004294AE /* PoolMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA194E1F5EA271004294AE /* PoolMiner.swift */; };
+		8BEA19511F5EA332004294AE /* SubscribeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA19501F5EA332004294AE /* SubscribeResult.swift */; };
+		8BEA19531F5EAE9C004294AE /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA19521F5EAE9C004294AE /* DataBlock.swift */; };
+		8BEA19551F5EAEB3004294AE /* DataBlockSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA19541F5EAEB3004294AE /* DataBlockSegment.swift */; };
+		8BEA195C1F5EDF48004294AE /* Cryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA19591F5EDF48004294AE /* Cryptography.m */; };
+		8BEA195D1F5EDF48004294AE /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA195B1F5EDF48004294AE /* NSData+HexString.m */; };
+		8BEE7D6D1F5C0BE100CDFB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D6C1F5C0BE100CDFB8A /* AppDelegate.swift */; };
+		8BEE7D851F5C0CD200CDFB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE7D7F1F5C0CD200CDFB8A /* Assets.xcassets */; };
+		8BEE7D861F5C0CD200CDFB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE7D801F5C0CD200CDFB8A /* LaunchScreen.storyboard */; };
+		8BEE7D871F5C0CD200CDFB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE7D821F5C0CD200CDFB8A /* Main.storyboard */; };
+		8BEE7D881F5C0CD200CDFB8A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE7D841F5C0CD200CDFB8A /* Info.plist */; };
+		8BEE7D8C1F5C0CF700CDFB8A /* StratumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D8B1F5C0CF700CDFB8A /* StratumClient.swift */; };
+		8BEE7D8E1F5C0D2500CDFB8A /* StratumMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D8D1F5C0D2500CDFB8A /* StratumMethods.swift */; };
+		8BEE7D901F5C101000CDFB8A /* StratumJSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D8F1F5C101000CDFB8A /* StratumJSONRPC.swift */; };
+		8BEE7D931F5C205900CDFB8A /* JobParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D921F5C205900CDFB8A /* JobParameters.swift */; };
+		8BEE7D951F5C26CE00CDFB8A /* StratumParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE7D941F5C26CE00CDFB8A /* StratumParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0870E3E84B04AF0DE235C661 /* Pods-SwiftMiner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMiner.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMiner/Pods-SwiftMiner.release.xcconfig"; sourceTree = "<group>"; };
+		517B81445AD8714F460E1539 /* Pods_SwiftMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEA194E1F5EA271004294AE /* PoolMiner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolMiner.swift; sourceTree = "<group>"; };
+		8BEA19501F5EA332004294AE /* SubscribeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeResult.swift; sourceTree = "<group>"; };
+		8BEA19521F5EAE9C004294AE /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBlock.swift; sourceTree = "<group>"; };
+		8BEA19541F5EAEB3004294AE /* DataBlockSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBlockSegment.swift; sourceTree = "<group>"; };
+		8BEA19571F5EDF48004294AE /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		8BEA19581F5EDF48004294AE /* Cryptography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cryptography.h; sourceTree = "<group>"; };
+		8BEA19591F5EDF48004294AE /* Cryptography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cryptography.m; sourceTree = "<group>"; };
+		8BEA195A1F5EDF48004294AE /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		8BEA195B1F5EDF48004294AE /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
+		8BEE7D691F5C0BE100CDFB8A /* SwiftMiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEE7D6C1F5C0BE100CDFB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BEE7D7F1F5C0CD200CDFB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BEE7D811F5C0CD200CDFB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BEE7D831F5C0CD200CDFB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BEE7D841F5C0CD200CDFB8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEE7D8B1F5C0CF700CDFB8A /* StratumClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumClient.swift; sourceTree = "<group>"; };
+		8BEE7D8D1F5C0D2500CDFB8A /* StratumMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumMethods.swift; sourceTree = "<group>"; };
+		8BEE7D8F1F5C101000CDFB8A /* StratumJSONRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumJSONRPC.swift; sourceTree = "<group>"; };
+		8BEE7D921F5C205900CDFB8A /* JobParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobParameters.swift; sourceTree = "<group>"; };
+		8BEE7D941F5C26CE00CDFB8A /* StratumParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumParser.swift; sourceTree = "<group>"; };
+		D1239316193487BBEC1736FC /* Pods-SwiftMiner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMiner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMiner/Pods-SwiftMiner.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BEE7D661F5C0BE100CDFB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E26A047D07EFC5266FAE529 /* Pods_SwiftMiner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E195A75098FA9615BC08571 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1239316193487BBEC1736FC /* Pods-SwiftMiner.debug.xcconfig */,
+				0870E3E84B04AF0DE235C661 /* Pods-SwiftMiner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BEA19561F5EDF48004294AE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA19571F5EDF48004294AE /* Bridging-Header.h */,
+				8BEA19581F5EDF48004294AE /* Cryptography.h */,
+				8BEA19591F5EDF48004294AE /* Cryptography.m */,
+				8BEA195A1F5EDF48004294AE /* NSData+HexString.h */,
+				8BEA195B1F5EDF48004294AE /* NSData+HexString.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8BEE7D601F5C0BE100CDFB8A = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D6B1F5C0BE100CDFB8A /* SwiftMiner */,
+				8BEE7D6A1F5C0BE100CDFB8A /* Products */,
+				3E195A75098FA9615BC08571 /* Pods */,
+				D5489158FCDC1B2D3DB210B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BEE7D6A1F5C0BE100CDFB8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D691F5C0BE100CDFB8A /* SwiftMiner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BEE7D6B1F5C0BE100CDFB8A /* SwiftMiner */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D6C1F5C0BE100CDFB8A /* AppDelegate.swift */,
+				8BEA19561F5EDF48004294AE /* Utilities */,
+				8BEE7D891F5C0CE400CDFB8A /* Backend */,
+				8BEE7D7E1F5C0CD200CDFB8A /* Resources */,
+			);
+			path = SwiftMiner;
+			sourceTree = "<group>";
+		};
+		8BEE7D7E1F5C0CD200CDFB8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D7F1F5C0CD200CDFB8A /* Assets.xcassets */,
+				8BEE7D801F5C0CD200CDFB8A /* LaunchScreen.storyboard */,
+				8BEE7D821F5C0CD200CDFB8A /* Main.storyboard */,
+				8BEE7D841F5C0CD200CDFB8A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BEE7D891F5C0CE400CDFB8A /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D911F5C204800CDFB8A /* Pool */,
+				8BEE7D8A1F5C0CE400CDFB8A /* StratumClient */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		8BEE7D8A1F5C0CE400CDFB8A /* StratumClient */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D8B1F5C0CF700CDFB8A /* StratumClient.swift */,
+				8BEE7D941F5C26CE00CDFB8A /* StratumParser.swift */,
+				8BEE7D8F1F5C101000CDFB8A /* StratumJSONRPC.swift */,
+				8BEE7D8D1F5C0D2500CDFB8A /* StratumMethods.swift */,
+			);
+			path = StratumClient;
+			sourceTree = "<group>";
+		};
+		8BEE7D911F5C204800CDFB8A /* Pool */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE7D921F5C205900CDFB8A /* JobParameters.swift */,
+				8BEA19521F5EAE9C004294AE /* DataBlock.swift */,
+				8BEA19541F5EAEB3004294AE /* DataBlockSegment.swift */,
+				8BEA19501F5EA332004294AE /* SubscribeResult.swift */,
+				8BEA194E1F5EA271004294AE /* PoolMiner.swift */,
+			);
+			path = Pool;
+			sourceTree = "<group>";
+		};
+		D5489158FCDC1B2D3DB210B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517B81445AD8714F460E1539 /* Pods_SwiftMiner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BEE7D681F5C0BE100CDFB8A /* SwiftMiner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEE7D7B1F5C0BE100CDFB8A /* Build configuration list for PBXNativeTarget "SwiftMiner" */;
+			buildPhases = (
+				DE2C804875EF95E0191BE906 /* [CP] Check Pods Manifest.lock */,
+				8BEE7D651F5C0BE100CDFB8A /* Sources */,
+				8BEE7D661F5C0BE100CDFB8A /* Frameworks */,
+				8BEE7D671F5C0BE100CDFB8A /* Resources */,
+				3CCB77BADE1FC106C221D737 /* [CP] Embed Pods Frameworks */,
+				E48C425509ED4CD30638C019 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMiner;
+			productName = SwiftMiner;
+			productReference = 8BEE7D691F5C0BE100CDFB8A /* SwiftMiner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BEE7D611F5C0BE100CDFB8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Pavel Shatalov";
+				TargetAttributes = {
+					8BEE7D681F5C0BE100CDFB8A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = WAJTTXQD9R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8BEE7D641F5C0BE100CDFB8A /* Build configuration list for PBXProject "SwiftMiner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BEE7D601F5C0BE100CDFB8A;
+			productRefGroup = 8BEE7D6A1F5C0BE100CDFB8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BEE7D681F5C0BE100CDFB8A /* SwiftMiner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BEE7D671F5C0BE100CDFB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BEE7D881F5C0CD200CDFB8A /* Info.plist in Resources */,
+				8BEE7D871F5C0CD200CDFB8A /* Main.storyboard in Resources */,
+				8BEE7D851F5C0CD200CDFB8A /* Assets.xcassets in Resources */,
+				8BEE7D861F5C0CD200CDFB8A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CCB77BADE1FC106C221D737 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMiner/Pods-SwiftMiner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMiner/Pods-SwiftMiner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2C804875EF95E0191BE906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMiner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48C425509ED4CD30638C019 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMiner/Pods-SwiftMiner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BEE7D651F5C0BE100CDFB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BEE7D931F5C205900CDFB8A /* JobParameters.swift in Sources */,
+				8BEA19511F5EA332004294AE /* SubscribeResult.swift in Sources */,
+				8BEE7D951F5C26CE00CDFB8A /* StratumParser.swift in Sources */,
+				8BEA195C1F5EDF48004294AE /* Cryptography.m in Sources */,
+				8BEA19551F5EAEB3004294AE /* DataBlockSegment.swift in Sources */,
+				8BEE7D8E1F5C0D2500CDFB8A /* StratumMethods.swift in Sources */,
+				8BEA194F1F5EA271004294AE /* PoolMiner.swift in Sources */,
+				8BEA195D1F5EDF48004294AE /* NSData+HexString.m in Sources */,
+				8BEE7D6D1F5C0BE100CDFB8A /* AppDelegate.swift in Sources */,
+				8BEE7D901F5C101000CDFB8A /* StratumJSONRPC.swift in Sources */,
+				8BEA19531F5EAE9C004294AE /* DataBlock.swift in Sources */,
+				8BEE7D8C1F5C0CF700CDFB8A /* StratumClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BEE7D801F5C0CD200CDFB8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BEE7D811F5C0CD200CDFB8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8BEE7D821F5C0CD200CDFB8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BEE7D831F5C0CD200CDFB8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BEE7D791F5C0BE100CDFB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BEE7D7A1F5C0BE100CDFB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BEE7D7C1F5C0BE100CDFB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1239316193487BBEC1736FC /* Pods-SwiftMiner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WAJTTXQD9R;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftMiner/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shatto.SwiftMiner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwiftMiner/Utilities/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8BEE7D7D1F5C0BE100CDFB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0870E3E84B04AF0DE235C661 /* Pods-SwiftMiner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WAJTTXQD9R;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftMiner/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shatto.SwiftMiner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwiftMiner/Utilities/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BEE7D641F5C0BE100CDFB8A /* Build configuration list for PBXProject "SwiftMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEE7D791F5C0BE100CDFB8A /* Debug */,
+				8BEE7D7A1F5C0BE100CDFB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEE7D7B1F5C0BE100CDFB8A /* Build configuration list for PBXNativeTarget "SwiftMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEE7D7C1F5C0BE100CDFB8A /* Debug */,
+				8BEE7D7D1F5C0BE100CDFB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BEE7D611F5C0BE100CDFB8A /* Project object */;
+}

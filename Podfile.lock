@@ -1,0 +1,42 @@
+PODS:
+  - CocoaAsyncSocket (7.6.1)
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - CryptoSwift (0.6.9)
+  - Fabric (1.6.12)
+  - Locksmith (3.0.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
+  - SwiftyJSON (3.1.4)
+  - Swinject (2.1.1)
+  - SwinjectStoryboard (1.1.2):
+    - Swinject (~> 2.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - Crashlytics
+  - CryptoSwift
+  - Fabric
+  - Locksmith
+  - RxCocoa
+  - RxSwift
+  - SwiftyJSON
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
+  SwinjectStoryboard: 92e75763c3299cdf627bef98a5180dc894864336
+
+PODFILE CHECKSUM: 70e18b26b194b53b10a7074af4c872404d531ece
+
+COCOAPODS: 1.3.1
